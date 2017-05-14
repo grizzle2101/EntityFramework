@@ -1,0 +1,10 @@
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\DatabaseFirst - Tutorial 1.exe.config
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\DatabaseFirst - Tutorial 1.exe
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\DatabaseFirst - Tutorial 1.pdb
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\EntityFramework.dll
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\EntityFramework.xml
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\obj\Debug\DatabaseFirst - Tutorial 1.csprojResolveAssemblyReference.cache
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\obj\Debug\DatabaseFirst - Tutorial 1.exe
+C:\Users\J90\documents\visual studio 2017\Projects\DatabaseFirst - Tutorial 1\DatabaseFirst - Tutorial 1\obj\Debug\DatabaseFirst - Tutorial 1.pdb

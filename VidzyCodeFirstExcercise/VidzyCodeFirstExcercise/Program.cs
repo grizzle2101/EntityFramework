@@ -30,6 +30,11 @@ namespace VidzyCodeFirstExcercise
             //Step 1 - Create the Enum : Byte
             //Step 2 - Add Property to Video Class
             //Step 3 - Add Migration & Update Database
+
+            // --- Finishing Touches ---
+            //The DBA Expects us to provide the Database Scripts
+            //update-database -Script -SourceMigration:Migr1 -TargetMigration:Migr2
+
         }
     }
 }

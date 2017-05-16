@@ -13,3 +13,18 @@ c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcer
 C:\Users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.ChangingGenreToOneToMany.resources
 C:\Users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.PopulatingGenreAndVideoTables.resources
 C:\Users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.AddClassificationColumnToVideoTable.resources
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\VidzyCodeFirstExcercise.exe.config
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\VidzyCodeFirstExcercise.exe
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\VidzyCodeFirstExcercise.pdb
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.dll
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.xml
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.csprojResolveAssemblyReference.cache
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.InitialModel.resources
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.ChangingGenreToOneToMany.resources
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.PopulatingGenreAndVideoTables.resources
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.AddClassificationColumnToVideoTable.resources
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.csproj.GenerateResource.Cache
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.exe
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.pdb

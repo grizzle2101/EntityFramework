@@ -33,7 +33,9 @@ namespace VidzyCodeFirstExcercise
 
             // --- Finishing Touches ---
             //The DBA Expects us to provide the Database Scripts
-            //update-database -Script -SourceMigration:Migr1 -TargetMigration:Migr2
+            //update-database -Script -SourceMigration:0
+            //  Or Specify a Range of Migrations
+            //update - database -Script -SourceMigration:Migr1 -TargetMigration:Migr2
 
         }
     }

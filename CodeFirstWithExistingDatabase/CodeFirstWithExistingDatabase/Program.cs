@@ -100,7 +100,7 @@ namespace CodeFirstWithExistingDatabase
 
 
 
-            //*****Lecture 4 - Deleting an Existing Class *****//
+            //*****Lecture 5 - Deleting an Existing Class *****//
             /*
              *  Deleting Category Class
              *  From Initial Category Class & the Property from the Course Class.
@@ -112,6 +112,52 @@ namespace CodeFirstWithExistingDatabase
              *  Step 3 - Delete the Category Class
              *  Step 4 - Delete the Category DBSet from PlutoContext
              *  Step 5 - 
+             */
+
+
+            //***** Lecture 6 - Recovering from Mistakes *****//
+            /*
+             * Earlier we deleted the DatePublished Column from the Courses Tables.
+             * What if we want to get that back?
+             * Code First is like Version Control, we can't delete the entry, that have to commit another to fix it.
+             * 
+             * Step 1 - Change the Model * Create another migration.
+             * Step 2 - add-migration & update database
+             */
+
+
+            //***** Lecture 7 - Downgrading a Database *****//
+            /*
+             *  Downgrading our database could be an essential task fixing a Bug in earlier versions
+             *  To Get an earlier version of the database, we have 2 options.
+             *  
+             *  --- Option 1: ---
+             *  Checkout the specific version from version control
+             *  Change the DB Name in Connection string
+             *  Update-database (will run all the scripts retrived from GIT)
+             *  
+             *  --- Option 2: ---
+             *  Say we want to keep the production data we have on file, but also rollback the database.
+             *  -Run Update-Database
+             *  -but provide a specific migration eg Migration F
+             *  -Entity will run the Down method for migration G & H to bring is back to F.
+             *  
+             *  Step 1 - Check the Migration History Table in SQL to see the migrations that have been ran in.
+             *  Step 2 - Identify the migration you would like to roll back to.
+             *  Step 3 - run update-database -TargetMigration DeleteDatePublishedColumnFromCoursesTable
+             *  Result - See the Migration History Table has been rolled back, and the changes in the databsae have been reverted.
+             *  
+             *  Before You Go - Run Update-Database to restore us back the latest version!
+             */
+
+            //***** Lecture 8 - Seeding Database *****//
+            /*
+             * Once we use the Enable Migration command, this configuration.cs file is created.
+             * This Contains a Method called Seed, which is used to populate data once the database changed have been made.
+             * 
+             * Step 1 - See the Sample AddOrInsert in the Seed Method
+             * Step 2 - ReWrite this Method to use real tables that we have created.
+             * Step 3 - Run the Update-Database Command, check the databse for our new values, NOICE!
              */
 
             Console.ReadKey();

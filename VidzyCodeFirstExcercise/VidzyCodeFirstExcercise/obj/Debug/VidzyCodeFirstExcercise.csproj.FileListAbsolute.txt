@@ -10,3 +10,6 @@ c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcer
 c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.pdb
 c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.InitialModel.resources
 c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.csproj.GenerateResource.Cache
+C:\Users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.ChangingGenreToOneToMany.resources
+C:\Users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.PopulatingGenreAndVideoTables.resources
+C:\Users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.AddClassificationColumnToVideoTable.resources

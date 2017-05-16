@@ -51,10 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classification.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="Migrations\201705161402186_InitialModel.cs" />
     <Compile Include="Migrations\201705161402186_InitialModel.Designer.cs">
       <DependentUpon>201705161402186_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705161439395_ChangingGenreToOneToMany.cs" />
+    <Compile Include="Migrations\201705161439395_ChangingGenreToOneToMany.Designer.cs">
+      <DependentUpon>201705161439395_ChangingGenreToOneToMany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705161500321_PopulatingGenreAndVideoTables.cs" />
+    <Compile Include="Migrations\201705161500321_PopulatingGenreAndVideoTables.Designer.cs">
+      <DependentUpon>201705161500321_PopulatingGenreAndVideoTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705161535008_AddClassificationColumnToVideoTable.cs" />
+    <Compile Include="Migrations\201705161535008_AddClassificationColumnToVideoTable.Designer.cs">
+      <DependentUpon>201705161535008_AddClassificationColumnToVideoTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -63,12 +76,23 @@
     <Compile Include="VidzyContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705161402186_InitialModel.resx">
       <DependentUpon>201705161402186_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705161439395_ChangingGenreToOneToMany.resx">
+      <DependentUpon>201705161439395_ChangingGenreToOneToMany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705161500321_PopulatingGenreAndVideoTables.resx">
+      <DependentUpon>201705161500321_PopulatingGenreAndVideoTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705161535008_AddClassificationColumnToVideoTable.resx">
+      <DependentUpon>201705161535008_AddClassificationColumnToVideoTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

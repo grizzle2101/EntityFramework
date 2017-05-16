@@ -1,3 +1,5 @@
+using System.Collections.ObjectModel;
+
 namespace VidzyCodeFirstExcercise.Migrations
 {
     using System;
@@ -26,6 +28,20 @@ namespace VidzyCodeFirstExcercise.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            //Adding our Sample Data
+            //context.Videos.AddOrUpdate(
+            //    v => v.Name,
+            //    new Video()
+            //    {
+            //        Name = "Starship Troopers",
+            //        Genres = new Collection<Genre>()
+            //        {
+            //            new Genre(){Id = 1, Name = "Sci-Fi"},
+            //            new Genre(){Id = 2, Name = "Comedy"}
+            //        }
+            //    }
+            //    );
         }
     }
 }

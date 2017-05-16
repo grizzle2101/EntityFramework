@@ -1,0 +1,12 @@
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\CodeFirstEmptyDatabase.exe.config
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\CodeFirstEmptyDatabase.exe
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\CodeFirstEmptyDatabase.pdb
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\EntityFramework.dll
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\EntityFramework.xml
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\obj\Debug\CodeFirstEmptyDatabase.csprojResolveAssemblyReference.cache
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\obj\Debug\CodeFirstEmptyDatabase.exe
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\obj\Debug\CodeFirstEmptyDatabase.pdb
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\obj\Debug\CodeFirstEmptyDatabase.Migrations.InitialModel.resources
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\CodeFirstEmptyDatabase\CodeFirstEmptyDatabase\obj\Debug\CodeFirstEmptyDatabase.csproj.GenerateResource.Cache

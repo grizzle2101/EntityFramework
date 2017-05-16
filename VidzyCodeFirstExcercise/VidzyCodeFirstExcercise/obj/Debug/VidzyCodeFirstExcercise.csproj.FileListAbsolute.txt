@@ -1,0 +1,12 @@
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\VidzyCodeFirstExcercise.exe.config
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\VidzyCodeFirstExcercise.exe
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\VidzyCodeFirstExcercise.pdb
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.dll
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.xml
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.csprojResolveAssemblyReference.cache
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.exe
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.pdb
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.Migrations.InitialModel.resources
+c:\users\conor.mcgrath\documents\visual studio 2017\Projects\VidzyCodeFirstExcercise\VidzyCodeFirstExcercise\obj\Debug\VidzyCodeFirstExcercise.csproj.GenerateResource.Cache

@@ -4,3 +4,9 @@ c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotatio
 c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csprojResolveAssemblyReference.cache
 c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.exe
 c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.pdb
+c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.dll
+c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.xml
+c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.Migrations.InitialModel.resources
+c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.GenerateResource.Cache

@@ -27,6 +27,9 @@ namespace DataAnnotations
             * --- Lecture 3 - Data Annotations Demo ---
             * Step 1 - Create the Domain Objects eg Course, Author, Tags etc.
             * Step 2 - Create the Context that Implments the DBSets for these Objects.
+            * Step 3 - enable-migrations
+            * Step 4 - Create InitialModel
+            * Stopped @ 2.37
             */
 
             Console.ReadKey();

@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201705201634372_InitialModel.Designer.cs">
       <DependentUpon>201705201634372_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705202024455_AddAnnotationsToCourseTable.cs" />
+    <Compile Include="Migrations\201705202024455_AddAnnotationsToCourseTable.Designer.cs">
+      <DependentUpon>201705202024455_AddAnnotationsToCourseTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705201634372_InitialModel.resx">
       <DependentUpon>201705201634372_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705202024455_AddAnnotationsToCourseTable.resx">
+      <DependentUpon>201705202024455_AddAnnotationsToCourseTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

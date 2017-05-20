@@ -30,7 +30,20 @@ namespace DataAnnotations
             * Step 3 - Create the Context that Implments the DBSets for these Objects.
             * Step 4 - enable-migrations
             * Step 5 - Create InitialModel
-            * Stopped @ 2.37
+            * 
+            * Objective:
+            * After running the InitialModel migration, we can see the default configuration.
+            * Course Table:
+            * ID = Primary Key, int & NOT NULLABLE
+            * Name = Nvarchar(Max) & NULLABLE
+            * Author_ID, we don't like this convention blehhh!
+            * 
+            * Applying some Annotations:
+            * Step 1 - Applying [Required] & [MaxLength(x)] to Name & Description.
+            * Step 2 - Create property with desired named for Foreign Key Authors.
+            * Step 3 - Link this new Property to Author Navigation property.
+            * Step 4 - add-migration AddAnnotationsToCourseTable (Database Centric names again)
+            * Step 5 - Update-Database & see the new Database changes we made.
             */
 
             Console.ReadKey();

@@ -10,3 +10,16 @@ c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotatio
 c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.Migrations.InitialModel.resources
 c:\users\j90\documents\visual studio 2017\Projects\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.GenerateResource.Cache
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\DataAnnotations.exe.config
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\DataAnnotations.exe
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\DataAnnotations.pdb
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.dll
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.xml
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csprojResolveAssemblyReference.cache
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.Migrations.InitialModel.resources
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.GenerateResource.Cache
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.exe
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.pdb
+C:\Users\J90\Source\Repos\EntityFramework\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.Migrations.AddAnnotationsToCourseTable.resources

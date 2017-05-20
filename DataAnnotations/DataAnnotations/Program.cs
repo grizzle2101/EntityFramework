@@ -25,10 +25,11 @@ namespace DataAnnotations
 
             /*
             * --- Lecture 3 - Data Annotations Demo ---
-            * Step 1 - Create the Domain Objects eg Course, Author, Tags etc.
-            * Step 2 - Create the Context that Implments the DBSets for these Objects.
-            * Step 3 - enable-migrations
-            * Step 4 - Create InitialModel
+            * Step 1 - Create Blank Database Pluto_DataAnnotations & Configure Connection string to match.
+            * Step 2 - Create the Domain Objects eg Course, Author, Tags etc.
+            * Step 3 - Create the Context that Implments the DBSets for these Objects.
+            * Step 4 - enable-migrations
+            * Step 5 - Create InitialModel
             * Stopped @ 2.37
             */
 

@@ -44,6 +44,15 @@ namespace DataAnnotations
             * Step 3 - Link this new Property to Author Navigation property.
             * Step 4 - add-migration AddAnnotationsToCourseTable (Database Centric names again)
             * Step 5 - Update-Database & see the new Database changes we made.
+            * 
+            * Limitations of Annotations:
+            * -When using [ForeignKey("Blah")], we have to be very certain this name won't change!
+            * -Intermediary Tables, like the TagCourses table created automatically by Entity,
+            * Cannot be ovverriden using Annotations! There is so where in our code to override this!
+            * 
+            * Tips:
+            * Prefer to use Fluent API (unless doing something small)
+            * Don't Mix Data Annotations & Fluent API (looking in 2 different places is baaad mkay.)
             */
 
             Console.ReadKey();

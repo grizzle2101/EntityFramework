@@ -17,6 +17,8 @@ namespace FluentAPI
         public string Description { get; set; }
         public int Level { get; set; }
         public float FullPrice { get; set; }
+        //Change 3 - Adding AuthorId Property
+        public int AuthorId { get; set; }
         public virtual Author Author { get; set; }
         public virtual ICollection<Tag> Tags { get; set; }
     }

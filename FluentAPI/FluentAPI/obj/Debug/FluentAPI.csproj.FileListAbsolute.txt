@@ -8,3 +8,15 @@ c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug
 c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\obj\Debug\FluentAPI.exe
 c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\obj\Debug\FluentAPI.pdb
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe.config
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\FluentAPI.pdb
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.dll
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.xml
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csprojResolveAssemblyReference.cache
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.exe
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.pdb
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.Migrations.InitialModel.resources
+C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.GenerateResource.Cache

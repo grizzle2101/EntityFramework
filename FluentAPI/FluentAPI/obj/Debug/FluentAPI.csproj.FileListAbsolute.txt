@@ -1,0 +1,10 @@
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csprojResolveAssemblyReference.cache
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe.config
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\FluentAPI.pdb
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\EntityFramework.dll
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\EntityFramework.xml
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\obj\Debug\FluentAPI.exe
+c:\users\j90\documents\visual studio 2017\Projects\FluentAPI\FluentAPI\obj\Debug\FluentAPI.pdb

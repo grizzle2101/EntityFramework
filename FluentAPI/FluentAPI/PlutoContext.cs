@@ -36,6 +36,13 @@ namespace FluentAPI
                 .HasForeignKey(c => c.AuthorId)//New AuthorId Property to replace Author_Id(Convention)
                 .WillCascadeOnDelete(false); //Turning off Cascase Delete
 
+            //Change 5 - TagCourses Fixup
+            modelBuilder.Entity<Course>()
+                .HasMany(c => c.Tags)
+                .WithMany(t => t.Courses)
+                .Map(m => m.ToTable("CourseTags"));
+
+
             base.OnModelCreating(modelBuilder);
         }
     }

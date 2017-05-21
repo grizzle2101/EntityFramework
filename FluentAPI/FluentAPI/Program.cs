@@ -30,7 +30,14 @@ namespace FluentAPI
              *  Works fine! Next Item!
              *  
              *  //TagCourses to CourseTags - Defining the Many to Many Relationship
-             *  
+             *  Step 1 - Add the Many to Many relationship into the context.
+             *  Define that 2 way relationship.
+             *      modelBuilder.Entity<Course> //Starting from Course
+             *      .HasMany(c => c.Tags) //Course Has MANY tags
+             *      .WithMany(t => t.Courses) //Tags Has MANY Courses
+             *      .map(m => m.ToTable("CourseTags")); //Mapping Object ToTable Method & Provide Name.
+             *  Step 2 - add-migration -force
+             *  //Creating Cover & Defining Relationship
              */
         }
     }

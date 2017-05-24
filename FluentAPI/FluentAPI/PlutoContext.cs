@@ -43,7 +43,13 @@ namespace FluentAPI
             modelBuilder.Entity<Course>()
                 .HasMany(c => c.Tags) //Course has MANY tags
                 .WithMany(t => t.Courses) //Tags have MANY Courses
-                .Map(m => m.ToTable("CourseTags")); //Mapping to CourseTags name.
+                                          //---Tutorial 41 -  Fluent API(Advanced Configurations)
+                .Map(m =>
+                {
+                    m.ToTable("CourseTags");
+                    m.MapLeftKey("CourseID");
+                    m.MapRightKey("TagId");
+                });
 
             ////---Task 4 ---
             //Change - Creating Cover & Course Relationship - One to One.

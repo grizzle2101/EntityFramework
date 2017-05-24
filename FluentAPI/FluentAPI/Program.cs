@@ -47,6 +47,14 @@ namespace FluentAPI
              *  
              *  Step 3 - Override Convention & Specify the Relationship
              */
+
+            /*
+             * ---Tutorial 41 - Tutorial 41 -  Fluent API(Advanced Configurations)---
+             *  Problem:
+             *  Our intmediary Table CourseTags has that DISGUSTING Tag_Id default Convention, and we need to figure out how to remove it.
+             *  
+             *  In PlutoContext
+             */
         }
     }
 }

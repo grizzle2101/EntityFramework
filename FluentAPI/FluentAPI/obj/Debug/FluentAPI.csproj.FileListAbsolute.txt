@@ -20,3 +20,15 @@ C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAP
 C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.pdb
 C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.Migrations.InitialModel.resources
 C:\Users\J90\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.GenerateResource.Cache
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe.config
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\FluentAPI.pdb
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.dll
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.xml
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csprojResolveAssemblyReference.cache
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.Migrations.InitialModel.resources
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.GenerateResource.Cache
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.exe
+C:\Users\conor.mcgrath\Source\Repos\EntityFramework\FluentAPI\FluentAPI\obj\Debug\FluentAPI.pdb

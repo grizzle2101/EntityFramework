@@ -53,7 +53,12 @@ namespace FluentAPI
              *  Problem:
              *  Our intmediary Table CourseTags has that DISGUSTING Tag_Id default Convention, and we need to figure out how to remove it.
              *  
-             *  In PlutoContext
+             *  
+             *  Step 1 - Edit the Pluto Context
+             *  Step 2 - Create the Mappings and provide the property names for ToTable, MapLeftKey, MapRightKey.
+             *  Stpe 3- add-migration InitialModel -Force
+             *  Step 4 - Observer the new Naming Convention override in the Migrations from Tag_Id to TagId.
+                });
              */
         }
     }

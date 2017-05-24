@@ -16,6 +16,7 @@ namespace FluentAPI
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            // ---- Tutorial 41 - Advanced Fluent Configurations --- 
             //---Task 1 ---
             //Change - Name is NOT Nullable & 255 Length.
             modelBuilder.Entity<Course>()

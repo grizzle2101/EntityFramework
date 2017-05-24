@@ -11,7 +11,7 @@ namespace FluentAPI
         static void Main(string[] args)
         {
             /*
-             *  --- Fluent API Demo ---
+             *  --- Tutorial 40 - Fluent API Demo ---
              *  Setup:
              *  -Create Database Pluto_FluentAPI
              *  -add-migration IntialModel (Do not update database)
@@ -60,6 +60,8 @@ namespace FluentAPI
              *  Step 4 - Observer the new Naming Convention override in the Migrations from Tag_Id to TagId.
                 });
              */
+
+            // ---- Tutorial 42 - Organizing Fluent API Configurations --- 
         }
     }
 }

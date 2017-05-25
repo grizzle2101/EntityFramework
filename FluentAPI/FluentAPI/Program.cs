@@ -61,7 +61,28 @@ namespace FluentAPI
                 });
              */
 
-            // ---- Tutorial 42 - Organizing Fluent API Configurations --- 
+            /*
+            * ---Tutorial 42 - Organizing Fluent API Configurations ---
+            *  
+            *  The Model we have been working on in relativly small, but in an Enterprise Application, there could be HUGE amounts
+            *  of Tables, Models, Migrations etc which all needs to be Organized.
+            *  
+            *  Objective:
+            *  Rewrite OnModel Creation to be more maintainable.
+            *  
+            *  Step 1 - Create a Folder called "EntityConfigurations"
+            *  Step 2 - Create a Class called "CourseConfiguration"
+            *  Step 3 - Take the Configuration Code from PlutoContext and move it into the CourseConfiguration Class.
+            *  Step 4 - Remove modelBuilder.Entity<Course>() because we don't need it anymore, thats for the Context to resolve.
+            *           Remove the Full Stops before Property and the start of each code block.
+            * Step 5 - Organize the Configuration using Moshs Standard
+            *       Table Names, Primary Keys, Properties & Relationships. (All organised Alphabetically)
+            *       
+            * Step 6 - In the Context, use modelBuilder.Configurations.Add(new CourseConfiguration()); to pass our configuration to the Model
+            *       Builder, and bam we got ourselves out configured DB in one line. Very Clean.
+            *       Note:
+            *       As the Database gets bigger, sorting these Alphabetically, and within their own sections will make life ALOT easier.
+            */
         }
     }
 }

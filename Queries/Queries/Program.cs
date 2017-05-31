@@ -288,6 +288,74 @@ namespace Queries
             foreach (var item in crossJoin)
                 Console.WriteLine("{0}, {1}" ,item.AuthorName, item.CourseName);
 
+            // --- Lecture 50 - Other Methods NOT supported by LINQ ---
+            //Task 1- Partitioning
+            /*
+             * Imaging we want to display Courses & Pages, but we only have 10 courses per page. The way we would do that is
+             * with Partitioning.
+             */
+             //Skip 10 Courses, Take the next 10.
+            var secondPage = context.Courses.Skip(10).Take(10);
+
+            /*
+             *  Task 2 - Element Operators
+             *  Everything we have done so far returns a list of elements, what if we want just a single one?
+             */
+
+            // --- First ---
+            //Get First Default is Primary key, else provide Lambda
+            //var firstItem = context.Courses.OrderBy(c => c.Level).First();
+
+            //Safer Method, if there is no first return default.
+            var firstItem = context.Courses.OrderBy(c => c.Level).FirstOrDefault(c => c.FullPrice > 100);
+            Console.WriteLine("\nFirstOfDefault() - The First Item is {0}", firstItem.Name);
+
+            /* --- Last ---
+             * Last is a tricky one, as it will not work with SQL, for SQL we would need to order the list in descending then take last.
+            */
+            //var lastItem = context.Courses.LastOrDefault(); --Won't work with SQL
+            var lastItem = context.Courses.OrderByDescending(c => c.Name).FirstOrDefault();
+            Console.WriteLine("\nLast() - The Last Course is {0}" , lastItem.Name);
+
+            /* --- Single ---
+             * Get a single item back. Be careful with the criteria, if we have multiple records with the same Id, its gonna fall over!
+            */
+            var singleItem = context.Courses.SingleOrDefault(c => c.Id == 1);
+            Console.WriteLine("\nSingleOrDefault() - The SINGLE item matching ID=1 - {0}", singleItem.Name);
+
+            /* --- All ---
+             * Do ALL Courses have a given criteria, eg are all course above 10? All returns boolean with our result.
+           */
+            var allItems = context.Courses.All(c => c.FullPrice > 10);
+            Console.Write("\nAll() - There are Courses Over $10? {0}", allItems);
+
+            /* --- ANY ---
+             * Do we have ANY with a given criteria. eg Any Level 1 courses? Return results as boolean
+            */
+            var anyItem = context.Courses.Any(c => c.Name.Contains("C#"));
+            Console.WriteLine("\nAny() - Any C# Books? {0}" , anyItem);
+
+            /* --- Task 3 - Aggregating ---
+             * Say we want to just simply Aggregate some data, eg Count all Courses
+            */
+
+            var courseCount = context.Courses.Count();
+            Console.Write("\nCount() - We Have {0} Courses", courseCount);
+
+            //Average, Max & Min
+            var averageCoursePrice = context.Courses.Average(c => c.FullPrice);
+            Console.WriteLine("\nAverage - The Average Price of a Course is ${0}" , averageCoursePrice);
+
+            var cheapCourse = context.Courses.Min(c => c.FullPrice);
+            Console.WriteLine("\nMin() - Cheapest Course we have ${0}", cheapCourse);
+
+            var expensiveCourse = context.Courses.Max(c => c.FullPrice);
+            Console.WriteLine("\nMax() - Most Expensive course we have ${0}" , expensiveCourse);
+
+            //Chaining Aggregates
+            var chainedAggregate = context.Courses.Where(c => c.Level == 1).Count();
+            Console.WriteLine("\nTotal Number of Level 1 Courses = {0}", chainedAggregate);
+
             Console.ReadKey();
         }
     }

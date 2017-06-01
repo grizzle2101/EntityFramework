@@ -356,6 +356,52 @@ namespace Queries
             var chainedAggregate = context.Courses.Where(c => c.Level == 1).Count();
             Console.WriteLine("\nTotal Number of Level 1 Courses = {0}", chainedAggregate);
 
+
+            //Lecture 51 -  Defered Execution
+
+            var Context = new PlutoContext();
+
+            var Courses = context.Courses;
+
+            //Delayed Execution Benefits, we take these queries and keep working on it!
+            //Not a good idea to write queries like this, just showing you that they are not SQL at this stage.
+            var filteredList = Courses.Where(c => c.Level == 1);
+            var sortedList = filteredList.OrderBy(c => c.Name);
+
+            Console.WriteLine("\n---Deferred Execution---");
+            foreach (var c in Courses)
+                Console.WriteLine(c.Name);
+
+            //Task 2 - Immediately Execute Query
+            /*
+             * Step 1 - Create new Property in Course Class.
+             * Step 2 - Attempt to Use our new Property
+             * 
+             * Error - Specific Member is not supported by LINQ to Entities.
+             * 
+             * Workaround:
+             * Retrive the list here BEFORE we do the IsBeginnerCourse Check
+             * There is a Caveat to this immediate execution, the performance impact!
+             * 
+             * Step 1 - use ToList().Where() to return the list BEFORE doing the IsBeginner Comparison
+             * 
+             * Note:
+             * This is only ever suitable when performance is not a problem. On a very small application, with a very small data set.
+             * Readability v Performance
+             */
+
+            //var beginnerCourse = context.Courses.Where(c => c.IsBeginnerCourse == true); //Runtime Exception Generated!
+
+            //Workaround, Immediately loading using ToList()
+            var beginnerCourse = context.Courses.ToList().Where(c => c.IsBeginnerCourse == true);
+
+            Console.WriteLine("\n---Immediate Execution:---");
+            foreach (var c in beginnerCourse)
+                Console.WriteLine(c.Name);
+
+            //Closing Note: Queries are NOT executed when instansiated. But When variable is queried, calling ToList, ToArray, ToDictionary
+            //First, Last, Single, Count, Max, Min & Average.
+
             Console.ReadKey();
         }
     }

@@ -26,5 +26,13 @@ namespace Queries
         public virtual ICollection<Tag> Tags { get; set; }
 
         public Cover Cover { get; set; }
+
+        //Lecture 51 - Deferred Execution - Task 2
+        //Sometimes we had Calculated Columns like so to make it more expressive.
+        //This is a Calculate Column
+        public bool IsBeginnerCourse
+        {
+            get { return Level == 1; }
+        }
     }
 }

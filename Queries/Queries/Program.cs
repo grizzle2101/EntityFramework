@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Queries
@@ -402,6 +403,42 @@ namespace Queries
             //Closing Note: Queries are NOT executed when instansiated. But When variable is queried, calling ToList, ToArray, ToDictionary
             //First, Last, Single, Count, Max, Min & Average.
 
+            //---Lecture 52 - IQueryable ---
+            //If we check the Type for Course DbSet we can see that its IQueryable
+
+            //context.Courses
+            IQueryable<Course> MyCourses = context.Courses;
+
+            var Filtered = MyCourses.Where(c => c.Level == 1);
+
+            Console.WriteLine("\n--- IQueryable Demo ---");
+            foreach (var course in Filtered)
+                Console.WriteLine(course.Name);
+
+            //Task 2 - IEnumberable
+            IEnumerable<Course> MaCoureses = context.Courses;
+
+            var MaFiltered = MyCourses.Where(c => c.Level == 1);
+
+            Console.WriteLine("\n---IEnumberable Demo ---");
+            foreach (var course in MaFiltered)
+                Console.WriteLine(course.Name);
+
+            //Task 3 - Extending Queries
+
+            //IEnumerable<Course> x;
+            //x.Where(c => c.Name.Contains("c#")); //Linq Extention methods with IEnumerable, Expect a Func/Delegate
+
+            IQueryable<Course> x;
+            //The Where option now has more overloads, which include Expressions.
+            //Expressions allow us to store these queries as Expression objects
+            //So when we run this, these expression objects will be compiled and translated into SQL, which is why we see there Where Clause
+            x.Where(c => c.Level == 1).OrderBy(c => c.Name);
+
+
+            //But When we use IEnumerable it uses a delegate, which is used to store the expression
+            //Then we get to another expression like OrderBy and store them immediately, we cant store these in an Expression Tree like IQueryable.
+            //x.Where(c => c.Level == 1).OrderBy(c => c.Name);
             Console.ReadKey();
         }
     }

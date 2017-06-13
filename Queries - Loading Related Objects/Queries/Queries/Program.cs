@@ -81,9 +81,61 @@ namespace Queries
             // */
 
 
-            /* --- Lecture 59 - Expicit Loading ---
-             * 
+            ///* --- Lecture 59 - Expicit Loading ---
+            // *  Similar to Eager loading, we tell Entity to load related objects at immediately
+            // *  But rather than Joins there will be Multiple Seperate Queries.
+            // */
+
+            //var context = new PlutoContext();
+
+            ////Solution 1 - Eager Loading - Get all Courses for Particular Author
+            ////var author = context.Authors.Include(a => a.Courses).Single(a => a.Id == 1);
+
+            ////Solution 2 - Explicit Loading - MSDN Way
+            ////This Solution Requires much more knowledge of the Context API
+            ////This only works for a Single Entry, if we had more than one option we're fooked!
+            //var author = context.Authors.Single(a => a.Id == 1);
+            //context.Entry(author).Collection(a => a.Courses).Load();
+
+            ////Solution 3 - The Mosh way!
+            //context.Courses.Where(c => c.AuthorId == author.Id).Load();
+
+            ///*
+            // * Both Solution 2 & 3 will work for Expicit Loading, but Solution 3 works will multiple properties!
+            // * We will have multiple simple queries instead of massive & complex Joins!
+            // * 
+            // * Another Benefit is we can apply filters to the related objects.
+            // * Like say we want to get an Author and ONLY his free courses.
+            // * Using Eager Loading, we load all courses and if the application is performance oriented, this will not do!
+            //*/
+
+            ////Solution 4 - Filtered Free Courses
+            ////MSDN Way - Query to get access to Query Object - More API knowledge again!
+            //context.Entry(author).Collection(a => a.Courses).Query().Where(c => c.FullPrice == 0).Load();
+
+            ////Mosh Way
+            //context.Courses.Where(c => c.AuthorId == author.Id && c.FullPrice == 0).Load();
+            ///*
+            // * The most important Take home is .Load(). This is how we force EXPLICIT Loading.
+            // */
+
+            //foreach (var course in author.Courses)
+            //    Console.WriteLine("{0}", course.Name);
+
+            /* Last Section - To Get Authors with Free Courses
              */
+            var context = new PlutoContext();
+            var authorz = context.Authors.ToList();
+            var authorIds = authorz.Select(a => a.Id); //Getting List of Author IDs
+
+            //MSDN Approach does not work with this, dosen't work with multiple objects!
+            //context.Entry(authorz);
+
+            //Mosh way - Selecting Multiple ID's Trick
+            //Similar to Using IN keyword with SQL
+            //Select Courses      //Where Author in List of Author ID's  // IsFree
+            context.Courses.Where(c => authorIds.Contains(c.AuthorId) && c.FullPrice == 0).Load();
+
         }
     }
 }

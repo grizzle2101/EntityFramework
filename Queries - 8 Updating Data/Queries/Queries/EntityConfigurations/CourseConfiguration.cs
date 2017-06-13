@@ -17,7 +17,7 @@ namespace Queries.EntityConfigurations
             HasRequired(c => c.Author)
             .WithMany(a => a.Courses)
             .HasForeignKey(c => c.AuthorId)
-            .WillCascadeOnDelete(false);
+            .WillCascadeOnDelete(false); //Cascade Delete Flag
             
             HasRequired(c => c.Cover)
                 .WithRequiredPrincipal(c => c.Course);

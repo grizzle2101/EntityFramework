@@ -1,5 +1,6 @@
 ﻿
 using System.Linq;
+using System.Data.Entity;
 
 namespace Queries
 {
@@ -8,7 +9,7 @@ namespace Queries
         static void Main(string[] args)
         {
             /*
-             * Lecture 64 - Adding Objects
+             * --- Lecture 64 - Adding Objects ---
              */
 
             //Task 1 - Adding a Course
@@ -93,24 +94,58 @@ namespace Queries
             //context.Courses.Add(MaCourse);
             //context.SaveChanges();
 
-            /*
-             *  --- Lecture 65 - Updating Objects ---
+            ///*
+            // *  --- Lecture 65 - Updating Objects ---
+            // */
+
+            //var context = new PlutoContext();
+
+            ///* Find()
+            // * Same as Single(c => c.Id == 4)
+            // * Just provide the primary key 4, and even works with composite keys so TagCourses.Find(4, 4)
+            // */
+            // //Step 1 - Need to Load Course into Memory
+            //var course = context.Courses.Find(4); //Status = Unchanged
+
+            ////Changing some Property
+            //course.Name = "New Name"; //Status = Changed
+            //course.AuthorId = 2;
+
+            //context.SaveChanges();
+
+
+            /* --- Lecture 66 - Removing Objects ---
+             *  Cascade Delete & Non-Cascade Delete
              */
 
+            ////Task 1 - Regular Delete
+            ////By Default Cascase Delete is on, so we have to configure this in CourseConfiguration.cs
+            //var context = new PlutoContext();
+
+            ////Load Object into Memory & Change Tracker
+            //var course = context.Courses.Find(6);
+
+            ////Removing said Course Object
+            //context.Courses.Remove(course);
+
+            //context.SaveChanges();
+
+            //Task 2 - Attempting to Without Cascade Delete
             var context = new PlutoContext();
-            
-            /* Find()
-             * Same as Single(c => c.Id == 4)
-             * Just provide the primary key 4, and even works with composite keys so TagCourses.Find(4, 4)
-             */
-             //Step 1 - Need to Load Course into Memory
-            var course = context.Courses.Find(4); //Status = Unchanged
 
-            //Changing some Property
-            course.Name = "New Name"; //Status = Changed
-            course.AuthorId = 2;
+            //Eager Loading Author and his Courses
+            var author = context.Authors.Include(a => a.Courses).Single(a => a.Id == 2);
+
+            //Removing Courses First for Cascase Delete to Work.
+            context.Courses.RemoveRange(author.Courses); 
+
+            //Removing said Author Object
+            context.Authors.Remove(author);
 
             context.SaveChanges();
+            //Result - Big old exception, trying to delete Authors!
+            //Solution - We need to delete the Courses first before deleting the Author!
+
         }
     }
 }

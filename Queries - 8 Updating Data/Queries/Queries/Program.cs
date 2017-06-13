@@ -96,6 +96,21 @@ namespace Queries
             /*
              *  --- Lecture 65 - Updating Objects ---
              */
+
+            var context = new PlutoContext();
+            
+            /* Find()
+             * Same as Single(c => c.Id == 4)
+             * Just provide the primary key 4, and even works with composite keys so TagCourses.Find(4, 4)
+             */
+             //Step 1 - Need to Load Course into Memory
+            var course = context.Courses.Find(4); //Status = Unchanged
+
+            //Changing some Property
+            course.Name = "New Name"; //Status = Changed
+            course.AuthorId = 2;
+
+            context.SaveChanges();
         }
     }
 }

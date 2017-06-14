@@ -1,6 +1,7 @@
 ﻿
 using System.Linq;
 using System.Data.Entity;
+using System;
 
 namespace Queries
 {
@@ -130,22 +131,54 @@ namespace Queries
 
             //context.SaveChanges();
 
-            //Task 2 - Attempting to Without Cascade Delete
+            ////Task 2 - Attempting to Without Cascade Delete
+            //var context = new PlutoContext();
+
+            ////Eager Loading Author and his Courses
+            //var author = context.Authors.Include(a => a.Courses).Single(a => a.Id == 2);
+
+            ////Removing Courses First for Cascase Delete to Work.
+            //context.Courses.RemoveRange(author.Courses); 
+
+            ////Removing said Author Object
+            //context.Authors.Remove(author);
+
+            //context.SaveChanges();
+            ////Result - Big old exception, trying to delete Authors!
+            ////Solution - We need to delete the Courses first before deleting the Author!
+
+            /* --- Lecture 67 - Working with Change Tracker ---
+             * 
+             */
+
             var context = new PlutoContext();
 
-            //Eager Loading Author and his Courses
-            var author = context.Authors.Include(a => a.Courses).Single(a => a.Id == 2);
+            //Add an Object
+            context.Authors.Add(new Author { Name = "New Author" });
 
-            //Removing Courses First for Cascase Delete to Work.
-            context.Courses.RemoveRange(author.Courses); 
+            //Update an Object
+            var author = context.Authors.Find(3);
+            author.Name = "Updated";
 
-            //Removing said Author Object
-            context.Authors.Remove(author);
+            //Remove an Object
+            var another = context.Authors.Find(4);
+            context.Authors.Remove(another);
 
-            context.SaveChanges();
-            //Result - Big old exception, trying to delete Authors!
-            //Solution - We need to delete the Courses first before deleting the Author!
+            //Get all Author Enteries
+            //context.ChangeTracker.Entries<Author>;
 
+            //Get ALL Enteries
+            var enteries = context.ChangeTracker.Entries();
+
+            //Display the States of Each Entry in Change Tracker
+            foreach (var entry in enteries)
+            {
+                //entry.Reload(); //If you change your mind and want to Repload Objects from Database
+                Console.WriteLine(entry.State);
+            }
+
+            //Take Home:
+            //You can see the states of Objects and query the Change Tracker for more information.
         }
     }
 }

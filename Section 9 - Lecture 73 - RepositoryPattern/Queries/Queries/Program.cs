@@ -38,10 +38,10 @@ namespace Queries
                     Console.WriteLine("\n {0} - {1}", c.Name, c.Author.Name);
 
                 //Example 3 - Cascade Delete
-                var author = unitOfWork.Authors.GetAuthorWithCourses(1);
-                unitOfWork.Courses.RemoveRange(author.Courses);
-                unitOfWork.Authors.Remove(author);
-                unitOfWork.Complete();
+                var author = unitOfWork.Authors.GetAuthorWithCourses(1); //Get Author & His Courses
+                unitOfWork.Courses.RemoveRange(author.Courses); //Remove Courses First
+                unitOfWork.Authors.Remove(author); //Remove Author after
+                unitOfWork.Complete(); //Save any and all Changes.
             }
         }
     }

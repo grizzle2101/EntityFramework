@@ -6,6 +6,7 @@ namespace PlutoDesktop.Core.Domain
     {
         public Course()
         {
+            //Change 2 - from Hashset to ObserveableCollection
             Tags = new ObservableCollection<Tag>();
         }
 
@@ -23,6 +24,7 @@ namespace PlutoDesktop.Core.Domain
 
         public int AuthorId { get; set; }
 
+        //Change 1 - From ICollection to ObserveableCollection
         public virtual ObservableCollection<Tag> Tags { get; set; }
 
         public Cover Cover { get; set; }

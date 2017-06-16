@@ -1,4 +1,5 @@
-﻿using PlutoDesktop.Core.Domain;
+﻿using PlutoDesktop.Core;
+using PlutoDesktop.Core.Domain;
 using PlutoDesktop.Persistence;
 using System;
 using System.Data.Entity;
@@ -11,7 +12,11 @@ namespace PlutoDesktop
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Old Way
         private PlutoContext _context = new PlutoContext();
+
+        //New Way - Unit of Work
+        private IUnitOfWork unitofwork = new UnitOfWork(new PlutoContext());
 
         public MainWindow()
         {
@@ -22,31 +27,52 @@ namespace PlutoDesktop
         {
             System.Windows.Data.CollectionViewSource courseViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("courseViewSource")));
 
+            //Old Way - Eager Load the Courses & Authors
             _context.Courses.Include(c => c.Author).Load();
 
-            courseViewSource.Source = _context.Courses.Local;
+            //New Way - Unit of Work
+            var courses = unitofwork.Courses.GetAll();
+
+            //Add Courses to View
+            //courseViewSource.Source = _context.Courses.Local;
+
+            courseViewSource.Source = courses;
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             base.OnClosing(e);
             
-            _context.Dispose();
+            //_context.Dispose();
+            unitofwork.Dispose();
         }
 
         private void AddCourse_Click(object sender, RoutedEventArgs e)
         {
-            _context.Courses.Add(new Course
-            {
-                AuthorId = 1,
-                Name = "New Course at " + DateTime.Now.ToShortDateString(),
-                Description = "Description",
-                FullPrice = 49,
-                Level = 1
-                
-            });
+            //Old Way
+            ////Adding a Hardcoded Course on ButtonClick.
+            //_context.Courses.Add(new Course
+            //{
+            //    AuthorId = 1,
+            //    Name = "New Course at " + DateTime.Now.ToShortDateString(),
+            //    Description = "Description",
+            //    FullPrice = 49,
+            //    Level = 1
 
-            _context.SaveChanges();
+            //});
+            ////Save Course
+            //_context.SaveChanges();
+
+            //New Way - Unit of Work
+            unitofwork.Courses.Add(new Course
+            {
+                AuthorId = 2,
+                Name = "Conor Mc",
+                Description = "Ma Description",
+                FullPrice = 420,
+                Level = 3
+            });
+            unitofwork.Complete();
         }
     }
 }
